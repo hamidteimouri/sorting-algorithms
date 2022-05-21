@@ -5,7 +5,7 @@ function bubbleSort(array) {
 
     for (let i = 0; i < length; i++) {
         for (let j = 0; j < length; j++) {
-            if (array[i] > array[j + 1]) {
+            if (array[j] > array[j + 1]) {
                 let temp = array[j];
                 array[j] = array[j + 1];
                 array[j + 1] = temp;
@@ -13,3 +13,7 @@ function bubbleSort(array) {
         }
     }
 }
+
+console.log(numbers)
+bubbleSort(numbers)
+console.log(numbers)
